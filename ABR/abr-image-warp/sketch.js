@@ -12,7 +12,7 @@ function setup() {
   src.pixelDensity(1);
    src.background(20); 
   background(20);
-  fetchImages("glitch", "computer", 20);
+  fetchImages("glitch", "flowers", 20);
 }
 
 function draw() {
@@ -59,7 +59,6 @@ function gotData(data) {
       });
     });
   }
-gotData: console.log(data.hits.length)
 }
 
 //When an image has fully left the top, send it back below the bottom edge
