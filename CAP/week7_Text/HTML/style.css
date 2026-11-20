@@ -1,0 +1,58 @@
+
+/*This is a comment in CSS*/
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.2rem; /* uses root font-size set on body */
+  font-weight: 800;
+  line-height: 3.7;
+}
+p {
+  padding: 20px;
+  border: 3px solid blue;
+  margin: 30px;
+  background: lightyellow;
+}
+.box {
+  background: pink;
+  padding: 20px;
+  border: 2px dashed red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.relative-box {
+  position: relative;
+  background: lightgreen;
+  padding: 10px;
+  border: 1px solid green;
+  height: 500px;
+  margin-top:10px;
+}
+
+/* Note: for absolute to work meaningfully, the nearest ancestor
+   with position: relative will be its reference point.
+   If none is found, it anchors to the page. */
+.absolute-box {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: lightcoral;
+  padding: 10px;
+  border: 1px solid darkred;
+}
+
+.fixed-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+Save and test in the br
